@@ -4,6 +4,7 @@ import DefaultLayout from "./assets/layouts/DefaultLayout";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import MovieIndexPage from "./pages/movies/MovieIndexPage";
+import MovieShowPage from "./pages/movies/MovieShowPage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           {/* Movie Routers */}
           <Route path="movies">
             <Route index element={<MovieIndexPage />}></Route>
+            <Route path=":id" element={<MovieShowPage />}></Route>
           </Route>
         </Route>
       </Routes>
