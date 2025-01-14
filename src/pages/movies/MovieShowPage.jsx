@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
-export default function MovieIndexPage() {
+export default function MovieShowPage() {
   let { id: movieId } = useParams();
   const [movie, setMovie] = useState(null);
 
@@ -16,8 +16,8 @@ export default function MovieIndexPage() {
   }, []);
 
   return (
-    <div className="container pt-5">
-      <h1>Movie Detail</h1>
+    <div className="container pt-5 fs-1">
+      <h1 className="my-5">Movie Detail</h1>
       <ul>{movie && <p> {movie.title}</p>}</ul>
     </div>
   );

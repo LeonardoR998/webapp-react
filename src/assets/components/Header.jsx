@@ -3,9 +3,9 @@ import { Link, NavLink } from "react-router-dom";
 export default function Header() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg bg-dark">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/">
+          <Link className="navbar-brand text-light" to="/">
             Movie DB
           </Link>
           <button
@@ -22,14 +22,14 @@ export default function Header() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <NavLink className="nav-link" to="about">
+                <NavLink className="nav-link text-light" to="about">
                   About
                 </NavLink>
               </li>
             </ul>
             <ul className="navbar-nav">
               <li className="nav-item">
-                <NavLink className="nav-link" to="movies">
+                <NavLink className="nav-link text-light" to="movies">
                   Movie
                 </NavLink>
               </li>

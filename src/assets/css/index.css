@@ -1,0 +1,10 @@
+body {
+  background-color: #eeeeee;
+  margin: 0;
+  padding: 0;
+}
+
+.custom-navbar {
+  background-color: #ffffff;
+  z-index: 1;
+}
